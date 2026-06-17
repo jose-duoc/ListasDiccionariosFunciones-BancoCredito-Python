@@ -1,1 +1,43 @@
+# Sistema de Gestión de Crédito Hipotecario 🏦
 
+Este es un proyecto educativo en Python que simula un sistema CRUD básico e interactivo para la gestión de datos de un cliente de crédito hipotecario, incluyendo la simulación del cálculo de dividendos.
+
+El proyecto está dividido en dos módulos principales para mantener un código limpio y organizado:
+1. `funciones.py`: Contiene la lógica de negocio y operaciones matemáticas.
+2. `main.py`: Contiene el flujo principal del programa y el menú interactivo.
+
+## 🚀 Características
+
+* **Búsqueda/Lectura**: Visualización del estado del deudor, nombres y teléfonos asociados.
+* **Inserción**: Adición de nuevos números telefónicos de contacto con validación de datos.
+* **Cálculo Financiero**: Simulador de dividendo mensual estimado en UF basado en el monto, tasa de interés anual y plazo en años.
+* **Actualización/Eliminación**: Flujo de confirmación para la desactivación del estado del cliente.
+
+---
+
+## 🛠️ Estructura del Código
+
+El script utiliza las siguientes funciones clave en el módulo `funciones.py`:
+
+* `mostrar_cabecera_credito()`: Imprime el diseño visual del reporte en la consola.
+* `agregar_telefono(diccionario_cliente, telefono_nuevo)`: Agrega dinámicamente un número a la lista del cliente.
+* `calcular_dividendo(monto_uf, tasa_anual, plazo_anios)`: Aplica la fórmula financiera para calcular la cuota mensual fija:
+  
+  $$\text{Cuota} = M \times \frac{i(1+i)^n}{(1+i)^n - 1}$$
+
+* `confirmar_desactivacion()`: Maneja la verificación segura antes de cambiar el estado del cliente a inactivo.
+
+---
+
+## 📋 Requisitos
+
+* Python 3.x o superior.
+* No requiere dependencias externas (usa librerías nativas de Python).
+
+---
+
+## 🔧 Instalación y Ejecución
+
+1. Clonar el repositorio:
+   ```bash
+   git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
